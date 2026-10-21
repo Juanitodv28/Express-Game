@@ -1,0 +1,12 @@
+const express = require('express');
+const gameRoutes = require('./routes/gameRoutes');
+
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+app.use('/api/games', gameRoutes);
+
+app.listen(port, () => {
+  console.log(`Servidor corriendo en http://localhost:${port}`);
+});
