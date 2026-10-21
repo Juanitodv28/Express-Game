@@ -4,4 +4,4 @@ const games = [
   { id: 3, title: 'Hades', genre: 'Roguelike', platform: 'PC' },
 ];
 
-module.exports = games;
+export default games;

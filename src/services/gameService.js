@@ -1,7 +1,5 @@
-const games = require('../data/games');
+import games from '../data/games.js';
 
-const getAllGames = () => games;
+export const getAllGames = () => games;
 
-const getGameById = (id) => games.find((game) => game.id === Number(id));
-
-module.exports = { getAllGames, getGameById };
+export const getGameById = (id) => games.find((game) => game.id === Number(id));
